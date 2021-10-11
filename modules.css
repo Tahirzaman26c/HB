@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Mukta');
+/* @import url(background.jpeg); */
+
+*{
+    box-sizing: border-box;
+}
+body {
+    margin:0;
+    padding:0;
+    background: #222;
+    font-family: "Mukta";
+    
+
+    background: url(imggg.jpg);
+    
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+}
+
+.main .header h1 {
+    color:white;
+    text-align: center;
+    border-bottom: 2px solid white;
+}
+
+#btn{
+    font-family: "Mukta";
+    color: white;
+    margin-top: 200px;
+    border: none;
+    background-color: rgb(0,139,139);
+    width: 150px;
+    padding: 0px 30px;
+    border-radius: 30px;
+    border: 2px solid white;
+    border-radius: 25px;
+    height: auto;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+
+#btn:hover {
+    background-color:rgb(154,205,50);
+}
+.main .header h1:hover{
+    color:rgb(154,205,50) ;
+}
+
+.header {
+    
+    /* margin-top: 100px;
+    margin-bottom: 100px; */
+    color: rgba(1,1,1,0.7);
+}
+
+.header h1 {
+    font-weight: bold;
+    font-size: 3em;
+    transition: all 500ms;
+}
+    
+.header h1:hover {
+    font-size: 45px;
+    font-size-adjust: 20px;
+}

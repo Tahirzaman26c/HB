@@ -1,0 +1,50 @@
+<!doctype html>
+
+<html>
+
+    <head>
+        <meta charset = "UTF-8"/>
+        <meta name = "viewport" content = "width-device-width, initial-scale=1.0"/>
+        <title> Body Mass Index </title>
+        <link href = "mass.css" type = "text/css" rel = "stylesheet"/>
+        <script src = "main.js"> </script>
+    </head>
+
+    <body>
+        <h1> BMI Module </h1>
+        <h2> Enter Height in (cms) and Weight in (kgs) </h2>
+
+   <script type="text/javascript">
+		function BMI() {
+			var h=document.getElementById('h').value;
+			var w=document.getElementById('w').value;
+			var bmi=w/(h/100*h/100);
+			var bmio=(bmi.toFixed(2));
+
+			document.getElementById("main-result").innerHTML="Your BMI is " + bmio;
+
+			if(bmio <18.5){
+				document.getElementById("result").innerHTML=" you're in the underweight range.";
+			}
+			else if(bmio >= 18.5 && bmio <=24.9){
+				document.getElementById("result").innerHTML="you're in the healthy weight range. ";
+			}
+			else if(bmio >=25 && bmio <=29.9){
+				document.getElementById("result").innerHTML="you're in the overweight range. ";
+			}
+			else;{
+				document.getElementById("result").innerHTML="you're in the obese range. ";
+			}
+		}
+	</script>
+		<div>
+			<p class="text">Height</p>
+			<input type="text" id="h">
+			<p class="text">Weight</p>
+			<input type="text" id="w">
+			<p id="result"></p>
+			<p id="main-result"></p>
+			<button id="btn" onClick="BMI()">Calculate</button>
+		</div>
+	</body>
+</html>
